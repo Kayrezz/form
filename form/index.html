@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pendaftaran</title>
+    <style>
+        .Title legend {
+            font-size: 30px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            width: 60rem;
+            justify-content: center;
+        }
+        
+        input {
+            margin: 2px;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        
+        .kelas {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        .ekskul {
+            float: left;
+        }
+        
+        .isi .atas .logo {
+            width: 20%;
+            display: flex;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="isi">
+        <form action="/">
+            <fieldset>
+                <legend>Formulir Pendaftaran Ekskul</legend>
+                <div class="atas">
+                    <div class="logo">
+                        <img src="Logo p 2.svg">
+                    </div>
+                    <div class="Title">
+                        <legend>Biodata</legend>
+                    </div>
+                </div>
+                <label for="lname">Nama Lengkap:</label>
+                <input type="text" id="lname" name="lname" value="">
+                <br>
+                <label for="Lahir">Tempat Lahir  :</label>
+                <input type="text" id="Lahir" name="Lahir" value="">
+                <br>
+                <label for="Tanggal">Tanggal Lahir  :</label>
+                <input type="date" id="date" name="date" value="">
+                <br>
+                <label for="Tanggal">Usia :</label>
+                <input type="number" min="15" max="20" id="number" name="number" value="">
+                <br>
+                <form action="">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <form action="">
+                            <input type="radio" id="laki-laki" name="fav_language" value="laki-laki">
+                            <label for="laki-laki">laki-laki</label><br>
+                            <input type="radio" id="Perempuan" name="fav_language" value="Perempuan">
+                            <label for="Perempuan">Perempuan</label><br>
+                            <br>
+                            <label for="islam">Agama:</label>
+                            <select name="Agama" id="Agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen Protestan">Kristen Protestan</option>
+                    <option value="Kristen Katolik">Kristen Katolik</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Khonghucu">Khonghucu</option>
+                    <option value="Penganut Kepercayaan">Penganut Kepercayaan</option>
+                </select>
+                            <br>
+
+                            <div class="kelas">
+                                <label for="Kelas">Kelas:</label>
+                                <select name="Kelas" id="Kelas">
+                        <option value="Kelas">10</option>
+                        <option value="Kelas">11</option>
+                        <option value="Kelas">12</option>
+                    </select></div>
+                    </fieldset>
+                    <div class="alamat">
+                        <fieldset>
+                            <legend>Alamat</legend>
+                            <textarea name="Alamat" id="Alamat">
+                    </textarea>
+                            <form action="">
+                                <legend>Desa Kelurahan</legend>
+                                <input list="Desa" name="Desa">
+                                <datalist id="Desa">
+                       <option value="CIPADA">
+                        <option value="Jambudipa">
+                        <option value="Padaasih">
+                            <option value="Pasirhalang">
+                                <option value="Pasirlangu">
+                                    <option value="Tugumukti">
+                                        <option value="Sadang mekar">
+                    </datalist>
+                                <br>
+                                <legend>Kecamatan</legend>
+                                <input list="Kecamatan" name="Kecamatan">
+                                <datalist id="Kecamatan">
+                       <option value="Cisarua">
+                        <option value="Paropong">
+                        <option value="Lembang">
+                            <option value="Ngamprah">
+                                <option value="Padalarang">
+                                    <option value="Cipatat">
+                                        <option value="Cikalong wetan">
+                                            <option value="Batu jajar"></option>
+                    </datalist>
+                                <br>
+                                <legend>Kabupaten/Kota:</legend>
+                                <input list="Kabupaten" name="Kabupaten">
+                                <datalist id="Kabupaten">
+                       <option value="Kab.Bandung Barat">
+                        <option value="Kab.Bandung">
+                        <option value="Kab.Cianjur">
+                            <option value="Kab.Sumedang">
+                                <option value="Kota bandung">
+                                    <option value="Kota Cimahi">
+                                        <option value="Cikalong wetan">
+                                            <option value="Batu jajar"></option>
+                    </datalist>
+                                <br>
+                                <legend>Kabupaten/Kota:</legend>
+                                <input list="Provinsi" name="Provinsi">
+                                <datalist id="Provinsi">
+                       <option value="Jawa Barat">
+                        <option value="Jawa Tengah">
+                        <option value="Jawa Timur">
+                        <option value="Dki Jakarta">
+                    </datalist>
+                                <br>
+                                <label for="kodepos">kode-pos:</label>
+                                <input type="text" id="kodepos" name="kodepos" value="">
+                                <br>
+                            </form>
+                            <br>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Kontak</legend>
+                        <label for="telepon">No.telphone:</label>
+                        <input type="tel" id="telepon" name="telepon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        <br>
+                        <label for="email">email:</label>
+                        <input type="email" id="email" name="email">
+                        <br> </fieldset>
+                    <div class="container">
+                        <h2>Akun</h2>
+                        <form id="registrationForm">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required><br>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required><br>
+
+                            <label for="confirmPassword">Konfirmasi Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+                            <div class="error" id="errorMessage"></div>
+                        </form>
+
+                        <!-- Ekstrakulikuler -->
+                        <div class="ekskul">
+                            <fieldset>
+                                <legend>Ekstrakulikuler</legend>
+                                <input type="checkbox" id="basket" name="ekskul[]" value="Basket">
+                                <label for="basket">Basket</label><br>
+                                <input type="checkbox" id="futsal" name="ekskul[]" value="Futsal">
+                                <label for="futsal">Futsal</label><br>
+                                <input type="checkbox" id="pramuka" name="ekskul[]" value="Pramuka">
+                                <label for="pramuka">Pramuka</label><br>
+                                <input type="checkbox" id="paskibra" name="ekskul[]" value="Paskibra">
+                                <label for="paskibra">Paskibra</label><br>
+                                <input type="checkbox" id="irma" name="ekskul[]" value="Irma">
+                                <label for="irma">Irma</label><br>
+                                <input type="checkbox" id="sispakala" name="ekskul[]" value="Sispakala">
+                                <label for="sispakala">Sispakala</label><br>
+                                <input type="checkbox" id="volly" name="ekskul[]" value="Volly">
+                                <label for="volly">Volly</label><br>
+                                <input type="checkbox" id="oscar" name="ekskul[]" value="OSCAR">
+                                <label for="oscar">OSCAR (Osis SMKN 1 Cisarua)</label><br>
+                                <input type="checkbox" id="pencak_silat" name="ekskul[]" value="Pencak Silat">
+                                <label for="pencak_silat">Pencak Silat</label><br>
+                                <input type="checkbox" id="taekwondo" name="ekskul[]" value="Taekwondo">
+                                <label for="taekwondo">Taekwondo</label><br>
+                                <input type="checkbox" id="karate" name="ekskul[]" value="Karate">
+                                <label for="karate">Karate</label><br>
+                                <input type="checkbox" id="codax" name="ekskul[]" value="Codax">
+                                <label for="codax">Codax</label><br>
+                                <input type="checkbox" id="ai" name="ekskul[]" value="AI">
+                                <label for="ai">AI (Artificial Intelligence)</label><br>
+                                <input type="checkbox" id="design" name="ekskul[]" value="Design">
+                                <label for="design">Design</label><br>
+                                <input type="checkbox" id="pmr" name="ekskul[]" value="PMR">
+                                <label for="pmr">PMR (Palang Merah Remaja)</label><br>
+                                <input type="checkbox" id="pks" name="ekskul[]" value="PKS">
+                                <label for="pks">PKS (Patroli Keamanan Sekolah)</label><br>
+                                <input type="checkbox" id="dance" name="ekskul[]" value="Dance">
+                                <label for="dance">Dance</label><br>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <legend>Upload Persyaratan</legend>
+                        <label for="pas_foto">Upload Pas Foto 3x4:</label>
+                        <input type="file" id="pas_foto" name="pas_foto"><br>
+                        <label for="ktp">Kartu Tanda Pelajar:</label>
+                        <input type="file" id="ktp" name="ktp"><br>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Kirim">
+                    <input type="reset" id="reset" value="Reset"><br>
+                    <script>
+                        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                            event.preventDefault();
+
+                            const password = document.getElementById('password').value;
+                            const confirmPassword = document.getElementById('confirmPassword').value;
+                            const errorMessage = document.getElementById('errorMessage');
+
+                            if (password !== confirmPassword) {
+                                errorMessage.textContent = 'Password dan konfirmasi password tidak cocok.';
+                            } else {
+                                errorMessage.textContent = '';
+                                alert('Akun berhasil dibuat!');
+                                // Di sini Anda bisa melanjutkan proses pengiriman data ke server.
+                            }
+                        });
+                    </script>
+            </fieldset>
+
+
+            </form>
+            <footer>
+
+            </footer>
+</body>
+
+</html>
